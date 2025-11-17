@@ -1,0 +1,28 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в систему</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div id="login-form">
+            <h2>Войти</h2>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+        <div id="welcome" style="display:none;">
+            <h2>Добро пожаловать!</h2>
+            <p>Ваш токен: <span id="token"></span></p> <!-- Здесь будет отображаться токен -->
+            <button id="logout">Выход</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
